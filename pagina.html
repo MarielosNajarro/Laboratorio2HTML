@@ -6,20 +6,21 @@
 </head>
 <body>
 	<h1 align="center">Curriculum Vitae</h1>
-	<fieldset>
+	<form action="#" method="post">
+		<fieldset>
 		<legend>Personal Data</legend>
 		<label>DUI</label>
-		<input type="text" placeholder="04813128">
+		<input type="text" placeholder="04813128" required pattern="[0-9]{8}-[0-9]{1}">
 
 		<label>First Name:</label>
-		<input type="text" placeholder="First Name">
+		<input type="text" placeholder="First Name" required pattern="[A-Za-z0-9]+">
 
 		<label>Last Name:</label>
-		<input type="text" placeholder="Last Name">
+		<input type="text" placeholder="Last Name" required pattern="[A-Za-z0-9]+">
 
 		<label for="genero">Gender</label>
-		<input type="radio" name="genero">M
-		<input type="radio" name="genero">F
+		<input type="radio" name="genero" value="M">M
+		<input type="radio" name="genero" value="F">F
 
 		<br>
 		<label>Contact Number:</label>
@@ -73,6 +74,7 @@
 	</fieldset>
 	<br>
 	<input type="submit" values="send">
-	<button>Cancel</button>
+	<button>Cancel</button></form>
+	
 </body>
 </html>
