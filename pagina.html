@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curriculum Vitae</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1 align="center">Curriculum Vitae</h1>
+	<fieldset>
+		<legend>Personal Data</legend>
+		<label>DUI</label>
+		<input type="text" placeholder="04813128">
+
+		<label>First Name:</label>
+		<input type="text" placeholder="First Name">
+
+		<label>Last Name:</label>
+		<input type="text" placeholder="Last Name">
+
+		<label for="genero">Gender</label>
+		<input type="radio" name="genero">M
+		<input type="radio" name="genero">F
+
+		<br>
+		<label>Contact Number:</label>
+		<input type="text">
+
+		<label>Birtday</label>
+		<input type="date">
+
+		<label>Civil Status</label>
+		<select>
+			<option value="married">married</option>
+			<option value="single">single</option>
+		</select>
+
+		<label>Image</label>
+		<input type="file">
+	</fieldset>
+
+	<br>
+	<fieldset>
+		<legend>Work Experience</legend>
+		<textarea cols="203" rows="6">Experience</textarea>
+	</fieldset>
+
+	<br>
+	<fieldset>
+		<legend>Academic Training</legend>
+		<textarea cols="203" rows="6">Academic Training</textarea>
+	</fieldset>
+
+	<br>
+	<fieldset>
+		<legend>Futher Training</legend>
+		<fieldset>
+			<legend>Programming Languajes</legend>
+			<input type="checkbox" name="ides[]">Java
+			<input type="checkbox" name="ides[]">C#
+			<input type="checkbox" name="ides[]">Python
+			<input type="checkbox" name="ides[]">C++
+			<input type="checkbox" name="ides[]">Ruby
+		</fieldset>
+		<fieldset>
+			<legend>Web Technologies</legend>
+			<input type="checkbox" name="ides[]">HTML5
+			<input type="checkbox" name="ides[]">CSS/CSS3
+			<input type="checkbox" name="ides[]">materialize Css
+			<input type="checkbox" name="ides[]">Javascript
+			<input type="checkbox" name="ides[]">Node.js
+			<input type="checkbox" name="ides[]">Spring MVS
+		</fieldset>
+	</fieldset>
+	<br>
+	<input type="submit" values="send">
+	<button>Cancel</button>
+</body>
+</html>
